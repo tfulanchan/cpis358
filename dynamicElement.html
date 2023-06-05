@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        function dynamic_tb() {
+            var cb_handle = document.getElementById("other_cb_id"); 
+            if (cb_handle.checked) {
+                var new_element = document.createElement("input"); 
+                new_element.setAttribute("type", "text"); 
+                new_element.setAttribute("value", "other text box");
+                new_element.setAttribute("name", "other_tb");
+                new_element.setAttribute("id", "dynamic_tb_id");
+
+                var p_handle = document.getElementById("other_p_id"); 
+                p_handle.appendChild(new_element);
+            } else {
+                var p_handle = document.getElementById("other_p_id"); 
+                var other_tb_handle = document.getElementById("dynamic_tb_id");
+                p_handle.removeChild(other_tb_handle);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>This page demonstrates dynamic element in JavaScript</p>
+    <h5>Click on the box for "Other" to see effect</h5>
+    <p id="other_p_id"> 
+        <label>Hobbies:</label>
+        <br> 
+        Cricket: <input type="checkbox" name="hobbies" value="cr">
+        Football:<input type="checkbox" name="hobbies" value="ft"> 
+        Other:<input type="checkbox" name="hobbies" value="ot" id="other_cb_id" onclick="dynamic_tb();" >
+    <p>
+        
+
+</body>
+
+</html>

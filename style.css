@@ -1,0 +1,92 @@
+
+FONT.dblist
+{
+    FONT-SIZE: 11pt;
+    COLOR: #0d4473
+}
+FONT.verlist
+{
+    FONT-SIZE: 11pt;
+    COLOR: #0d4473;
+
+}
+TABLE.in
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px;
+    BACKGROUND-COLOR: #ffff00
+}
+.linegrp0
+{
+    FONT-SIZE: 11pt;
+    BACKGROUND-COLOR: #ffffff
+}
+.linegrp1
+{
+    FONT-SIZE: 11pt;
+    BACKGROUND-COLOR: #ddddff
+}
+FONT.menulist
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 12pt;
+    COLOR: #dedeeb;
+    FONT-FAMILY: 'Comic Sans MS'
+}
+A.menu_a
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 12pt;
+    COLOR: #ffaa00;
+    FONT-STYLE: normal;
+    FONT-FAMILY: 'Comic Sans MS'
+}
+.listgrp0
+{
+    FONT-SIZE: 11pt;
+    BACKGROUND-COLOR: #ddffdd
+}
+.listgrp1
+{
+    FONT-SIZE: 11pt;
+    BACKGROUND-COLOR: #ddddff
+}
+A
+{
+    COLOR: #3333ff;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: #3333ff
+}
+A:link
+{
+    COLOR: #3333ff;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #ff4400;
+    TEXT-DECORATION: underline
+}
+.listtitle
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 12pt;
+    COLOR: #3333ff
+}
+UL
+{
+    MARGIN-LEFT: 20px;
+
+padding-left:0px;
+}
+LI
+{
+    MARGIN-LEFT: 2pt;
+    FONT-SIZE: 10pt;
+
+}

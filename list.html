@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=GB2312">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        <!--
+        #foldheader {
+            cursor: hand;
+            list-style-image: url(fold.gif)
+        }
+
+        #foldinglist {
+            list-style-image: url(list.gif)
+        }
+        -->
+    </style>
+    <script language="JavaScript1.2">
+        var head = "display:''";
+        img1 = new Image();
+        img1.src = "images/plus.gif";
+        img2 = new Image();
+        img2.src = "images/minus.gif";
+        var ns6 = document.getElementById && !document.all
+        function change(e) {
+            if (!document.all && !ns6)
+                return
+            var etarget = ns6 ? e.target : event.srcElement
+            var imagetarget = etarget
+            if (etarget.id == "foldheader" || ns6 && etarget.parentNode.id == "foldheader") {
+                if (ns6 && etarget.parentNode.id == "foldheader") {
+                    nested = etarget.parentNode.nextSibling.nextSibling
+                    imagetarget = etarget.parentNode
+                } else
+                    nested = ns6 ? etarget.nextSibling.nextSibling : document.all[etarget.sourceIndex + 1]
+                if (nested.style.display == "none") {
+                    nested.style.display = ''
+                    imagetarget.style.listStyleImage = "url(images/minus.gif)"
+                } else {
+                    nested.style.display = "none"
+                    imagetarget.style.listStyleImage = "url(images/plus.gif)"
+                }
+            }
+        }
+        document.onclick = change
+    </script>
+    <title></title>
+</head>
+
+<body background="images/tempebg.jpg">
+    <a href='https://fcit.kau.edu.sa/aims/runReportAPI2.php?REP_ID=3&FL_TYPE=pdf&CLG_ID=1&PRA_STR=(PARAM1:18)%7C(PARAM2:2)%7C(PARAM3:3)%7C(PARAM4:BINDER)%7C(PARAM6:CPIS-358)%7C(PARAM5:0)%7C(PARAM7:)%7C(P_DESFORMAT:PDF)%7C(P_RDF_FILENAME:BINDER)%7C(P_OUTPUT_FILENAME:Syllabus)' target='myBody'>Home</a>
+    <p>Items</p>
+    <font class='verlist'>
+        <div marginwidth="0">
+            <ul>
+                
+                <li id="foldheader" style="list-style-image: url(images/plus.gif)" ;>HTML</li>
+                <ul id="foldinglist" style="display:none">
+                    <li><a href='image.html' target='myBody'>Image and Image mapping</a></li>
+                    <li><a href='links.html' target='myBody'>Inter and Intra Linking of Pages</a></li>
+                    <li><a href='tables.html' target='myBody'>Lists and Tables</a></li>
+                    <li><a href='frames.html' target='myBody'>Frames, Iframes</a></li>
+                    <li><a href='forms.html' target='myBody'>Forms</a></li>
+                </ul>
+                <li id="foldheader" style="list-style-image: url(images/plus.gif)" ;>CSS</li>
+                <ul id="foldinglist" style="display:none">
+                    <li>Using Embedded and External Styles</li>
+                    <li>Using General and Antonymous Classes</li>
+                    <li>Layering</li>
+                    <li><a href='shadows.html' target='myBody'>Shadows and Borders</a></li>
+                    <li><a href='menu.html' target='myBody'>Menus</a></li>
+                </ul>
+                <li id="foldheader" style="list-style-image: url(images/plus.gif)">JavaScript</li>
+                <ul id="foldinglist" style="display:none">
+                    <li><a href='dynamicPicture.html' target='myBody'>Dynamic Picture & Text</a></li>
+                    <li><a href='forms.html' target='myBody'>Form Validation</a></li>
+                    <li><a href='dynamicElement.html' target='myBody'>Dynamic Elements</a></li>
+                </ul>
+                <li id="foldheader" style="list-style-image: url(images/plus.gif)">ASP.NET</li>
+                <ul id="foldinglist" style="display:none">
+                    <li> Receiving and processing data from forms
+                    </li>
+                    <li> Inserting/deleting/updating/
+                        retrieving/searching data from database
+                    </li>
+                    <li> File uploading
+                    </li>
+                    <li> Using Cookies
+                    </li>
+                    <li> Using Sessions
+                    </li>
+                </ul>
+                <li id="foldheader" style="list-style-image: url(images/plus.gif)" ;>
+                    <a href='rubric.html' target='myBody'>Rubric</a>
+                    </li>
+            </ul>
+        </div>
+</body>
+
+</html>
